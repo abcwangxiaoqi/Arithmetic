@@ -1,3 +1,4 @@
+using System;
 public abstract class SortBase
 {
     public long run(int[] nums)
@@ -6,8 +7,11 @@ public abstract class SortBase
         //计算时间
         sort(nums);
 
+        long t=Tools.end();
 
-        return Tools.end();
+        Console.WriteLine(outString(nums));
+
+        return t;
     }
 
     public abstract string Name{get;}
@@ -20,7 +24,7 @@ public abstract class SortBase
         nums[j]=tmp;
     }
 
-    protected string outString(int[] nums)
+    string outString(int[] nums)
     {
         string str="";
         int i=0;

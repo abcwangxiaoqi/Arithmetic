@@ -9,6 +9,7 @@ namespace Arithmetic
             int[] nums={243, 5, 7, 22, 3, 11};
 
             long paytime=0;
+            //SortBase sort=new BetterQuickSort1();
             SortBase sort=new QuickSort();
             paytime=sort.run(nums);
             Console.WriteLine("paytime="+paytime);

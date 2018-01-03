@@ -33,7 +33,6 @@ public class ShellSort : SortBase
                 }
             }
             h=h/3;
-            Console.WriteLine("nums="+outString(nums));
         }
     }
 }
