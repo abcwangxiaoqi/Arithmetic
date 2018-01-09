@@ -6,6 +6,18 @@ namespace Arithmetic
     {
         static void Main(string[] args)
         {
+            stringAction();
+        }
+
+        static void stringAction()
+        {
+            string[] str = { "1237895", "12386597", "1238659598684" };
+            string common = StringArithmetic.longestCommonPrefix(str);
+            Console.WriteLine(common);
+        }
+
+        static void template()
+        {
             int[] nums={243, 5, 7, 22, 3, 11};
 
             long paytime=0;
