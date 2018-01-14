@@ -1,5 +1,7 @@
 /*
 快速排序
+
+效率 O（nlog(n)）
 */
 using System;
 
