@@ -24,7 +24,6 @@ public sealed class StringArithmetic
         for (int i = 0; i < mainL - subL + 1; i++)
         {
             if (mainChar[i] == subChar[0] &&
-            mainL-i>=subL &&
             main.Substring(i, subL) == sub)
             {
                 index = i;
@@ -109,7 +108,6 @@ public sealed class StringArithmetic
                 }
             }
         }
-
         return common;        
     }
 }
